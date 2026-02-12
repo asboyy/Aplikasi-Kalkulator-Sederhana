@@ -1,0 +1,8 @@
+<resources>
+    <style name="CalcButton">
+        <item name="android:background">#333333</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="CalcButtonWide" parent="CalcButton" />
+</resources>

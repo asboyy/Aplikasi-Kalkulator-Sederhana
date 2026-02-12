@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/expression_display"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="4dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="?android:textColorSecondary"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FFBB01"
+        android:gravity="end|center_vertical"
+        android:padding="16dp"
+        android:text="@string/initial_display_value"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="36sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:columnCount="4">
+
+        <Button
+            style="@style/CalcButton"
+            android:layout_columnSpan="2"
+            android:onClick="onHistoryClick"
+            android:text="@string/button_history" />
+
+        <Button
+            style="@style/CalcButton"
+            android:layout_columnSpan="2"
+            android:onClick="onClearHistoryClick"
+            android:text="@string/button_clear_history" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onClearClick"
+            android:text="@string/button_clear" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onToggleSignClick"
+            android:text="@string/button_plus_minus" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onOperatorClick"
+            android:text="@string/button_divide" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onOperatorClick"
+            android:text="@string/button_multiply" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onNumberClick"
+            android:text="@string/button_seven" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onNumberClick"
+            android:text="@string/button_eight" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onNumberClick"
+            android:text="@string/button_nine" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onOperatorClick"
+            android:text="@string/button_add" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onNumberClick"
+            android:text="@string/button_four" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onNumberClick"
+            android:text="@string/button_five" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onNumberClick"
+            android:text="@string/button_six" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onOperatorClick"
+            android:text="@string/button_subtract" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onNumberClick"
+            android:text="@string/button_one" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onNumberClick"
+            android:text="@string/button_two" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onNumberClick"
+            android:text="@string/button_three" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onEqualClick"
+            android:text="@string/button_equal" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onDotClick"
+            android:text="@string/button_dot" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onNumberClick"
+            android:text="@string/button_zero" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onOperatorClick"
+            android:text="@string/button_modulus" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onOperatorClick"
+            android:text="@string/button_power" />
+
+    </GridLayout>
+
+</LinearLayout>
